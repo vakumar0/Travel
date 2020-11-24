@@ -6,6 +6,7 @@ import Home from './components/pages/Home'
 import Luxury from './components/pages/Luxury';
 import Adventure from './components/pages/Adventure';
 import SignUp from './components/pages/SignUp';
+import PageNotFound from './components/pages/PageNotFound';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route exact path="/luxury" component={Luxury}></Route>
           <Route exact path="/adventure" component={Adventure}></Route>
           <Route exact path="/sign-up" component={SignUp}></Route>
+          <Route component={PageNotFound}></Route>
         </Switch>
       </Router>      
     </>
