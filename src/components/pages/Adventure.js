@@ -8,7 +8,7 @@ function Adventure() {
         <>
             <h1 className="adventure" style={
             {
-                background: `url(${process.env.PUBLIC_URL}/images/img-1.jpg)`,
+                background: `url(${process.env.PUBLIC_URL}/images/img-7.jpg)`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
