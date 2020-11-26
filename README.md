@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Travel
+Travel is a static website catered towards travelling. It displays some extravagant places which are adventurous and luxurious. This is a fully responsive website and is hosted on netlify. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Website can be viewed on the following link: https://vakumar-travel.netlify.app/ 
 
-## Available Scripts
+#### Note: This is test a website. Few links and clickable items are just for display and might now work as expected. This is done purposely to focus only on the key areas that I wanted to understand.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Objectives
+  - Travel was a weekend project developed to understand React.js workings.
+  - This project helped me understand how the react interacts with other libraries, JSX syntax, how React integrates with npm module, components and routing. 
+  
+### Challenges Faced
+#### Issue 
+   - Images and videos were accessible in the react components when tested on the local environment but when hosted on 3rd party applications such as GitHub or Netlify, images wouldn't load and throw image not found error.
+#### Fix
+   - It appears that on localhost, react was able to access images present in the public folder. But when the application was deployed on the server, it wasn't able to the identity the path of the public folder or didn't had the access of the same. To fix this I had to use "process.env.PUBLIC_URL" to fetch the media items.
+   
+#### Issue
+   - While accessing the website for the first time, no data would show, however, when the home button was click the application would work normally i.e. until it is refreshed. When the application was refreshed no page found error was thrown.
+#### Fix
+   - By default I was using "BrowserRouting". BrowserRouting wasn't able to identitfy the correct url and would often lead to incorrect navigation. To avoid this I used "HashRouting". I went through their pros and cons such as HashRouting incompatiblity with SEO and so called ugly url. But for my use case HashRouting was perfect.
+   
+### Technologies And Libaries Used
+   - React.js
+   - CSS
+   - HTML
+   - Font-awesome
+   - Google fonts : PT Sans
+   
+### Editor Used For Development   
+   - Visual Code
